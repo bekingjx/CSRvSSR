@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700;900&family=Questrial&display=swap');
+
+$bg: #191919;
+$width: min(980px, 90%);
+$font1: 'Outfit', sans-serif;
+$font2: 'Questrial', sans-serif;
+$radius: 1rem;
+
+html, body, div {
+  padding: 0;
+  margin: 0;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.first-app {
+  background: $bg;
+  font-family: $font2;
+
+  a {
+    all: unset;
+    color: #fff;
+    text-align: center;
+  }
+
+  .navigation {
+    width: $width;
+    overflow: hidden;
+    margin-inline:auto;
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    
+    a {
+      background: #282828;
+      padding-block: .5em;
+      border-radius: $radius;
+    }
+  }
+
+  .wrapper {
+    color:#fff;
+    width: $width;
+    margin-inline:auto;
+  }
+
+  .alert {
+    color: yellow;
+    border: 1px solid;
+    border-radius: $radius;
+    padding: 1em;
+    width: fit-content;
+  }
+}
+
