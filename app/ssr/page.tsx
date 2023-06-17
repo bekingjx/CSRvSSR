@@ -1,6 +1,5 @@
 export const revalidate = 3600 // In sostanza React controlla in questo tempo se il codice si è aggiornato con nuovi dati
 
-
 const fetchTodos = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/todos")
   const data = await res.json()

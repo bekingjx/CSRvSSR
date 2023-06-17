@@ -2,9 +2,20 @@
 
 import { useState, useEffect } from "react"
 
+export const metadata = {
+  title: 'CSR',
+  description: 'Client Side Rendering',
+}
+
 export default function Csr() {
   const [data, setData] = useState([])
   const [isLoading, setLoading] = useState(false)
+
+  interface Todo {
+    id: number;
+    title: string;
+    // Aggiungi qui altre proprietà se necessario
+  }
 
   useEffect(() => {
     setLoading(true)
@@ -32,10 +43,10 @@ export default function Csr() {
 
   return (
     <main>
-      <h1>CSR (Client Side Rendering)</h1>
+      <h1>{metadata.title} ({metadata.description})</h1>
       <h3 className="alert">Set the network speed to 3G and test it!</h3>
-      {data.map((todo) => 
-        <p key={todo['id']}>{todo.title}</p> )}
+      {data.map((todo:Todo) => 
+        <p key={todo.id}>{todo.title}</p> )}
     </main>
   )
 }
