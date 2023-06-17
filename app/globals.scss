@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;700;900&family=Questrial&display=swap');
 
-$bg: #191919;
+$bg: #585858;
 $width: min(980px, 90%);
 $font1: 'Outfit', sans-serif;
 $font2: 'Questrial', sans-serif;
@@ -58,3 +58,10 @@ body::-webkit-scrollbar{
   }
 }
 
+// Footer 
+
+.footer {
+  height: min(100px, 30vh);
+  padding-block: 1em;
+  background-color: #282828;
+}

@@ -1,18 +1,6 @@
-const fetchTodos = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/todos")
-  const data = await res.json()
-  return data
-}
-
-export default async function Static() {
-  const todos = await fetchTodos()
+export default function Home() {
   return (
     <main>
-    <h1>Static Generated</h1>
-    <h3 className="alert">Set the network speed to 3G and test it!</h3>
-    {todos.map((todo) => (
-      <p key={todo.id}>{todo.id} - {todo.title}</p>
-    ))}
-  </main>
+    </main>
   )
 }
