@@ -35,7 +35,7 @@ export default function Csr() {
       <h1>CSR (Client Side Rendering)</h1>
       <h3 className="alert">Set the network speed to 3G and test it!</h3>
       {data.map((todo) => 
-        <p key={todo.id}>{todo.title}</p> )}
+        <p key={todo['id']}>{todo.title}</p> )}
     </main>
   )
 }
